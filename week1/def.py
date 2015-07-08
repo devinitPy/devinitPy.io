@@ -10,18 +10,26 @@ def summation(a,b):
     print "sum function with arguments"
     c=a+b
     print "sum is {0}".format(c)
-summation(5,6)
+summation(5 , 6)
 
 def sumReturn(a,b):
     print "sum function with arguments"
     c=a+b
     return c
-d=sumReturn(2,3)
-print "d is assigned return value of summation funtion,  d is %d"%d
+
+value =sumReturn(2 ,3)
+
 #global variables
-name = "allan"
+global_name = "allan"
 
 def nameFun():
-    print("global name is : "+name)
-    n= "alex"
-    print("local name is : "+ n)
+    print("global name is : "+global_name)
+    local_name= "alex"
+    print("local name is : "+ local_name)
+    global me
+    me ="locally defined global variable"
+    print me
+
+nameFun()
+
+print me
