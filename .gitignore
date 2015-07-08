@@ -41,3 +41,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.name
+*.xml
+.idea/devinitpy.github.io.iml
+*.xml

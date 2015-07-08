@@ -3,8 +3,8 @@
 '''
 age = input("my age: ")
 
-if age == 24:
-    print("age is 24")
+if age > 24 and not age >30:
+    print("age is greater than 24")
     b=age + 7
     print(b)
 
@@ -14,7 +14,7 @@ else:
     print("you are old")
 
 name = raw_input("my name :")
-if name == "allan":
+if name == "allan"  and age > 24:
     print("hi "+ name)
 elif name=="mary":
     print("hi mary")
