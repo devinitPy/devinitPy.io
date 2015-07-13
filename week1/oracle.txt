@@ -1,26 +1,3 @@
-username:alan
-password:alan
-
-
-to check listener status
-
-lsnrctl status
-
-to start listener
-
-lsnrctl start
-
-
-to check connection 
-
-tnsping XE
-
-
-to connect database schema
-
-conn alan/alan
-
-application while connecting to DB can use handler XE.
-
-connection to DB
-sqlplus alan/alan
+1 allan
+2 alex
+3 Betty
