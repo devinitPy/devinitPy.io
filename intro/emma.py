@@ -26,22 +26,20 @@ def course_data():
 def computed_grade(user_grade):
     # definining grade value variable as an intially empty variable
     grade_value = None
-    if user_grade=="A":
-        grade_value=6
-    elif user_grade=="B":
-        grade_value=5
-    elif user_grade=="C":
-        grade_value=4
-    else:
+     #The index of the element corresponds to its value
+    grade_list = ["A","B","C","D","E"]
+    index = 0
+    for g in grade_list:
+        index+=1
+        if user_grade == g :
+            grade_value = index
+    # user entered invalid grade that we dont have in our list
+    if grade_value == None:
         print("entered wrong grade, Please re-enter your grades one more Time: ")
         exam()
-    #if grade is computed and hence has a value return that value else
-    # exit this happens on second run if user entered wrong value intially
-    if grade_value != None:
-        print ("Your grade value is : "+str(grade_value))
-        return grade_value
     else:
-       exit()
+          print ("Your grade value is : "+str(grade_value))
+          return grade_value
 
 def determining_performance(grade):
     if grade >= 4:
