@@ -7,17 +7,30 @@
 '''
 
 #global variable
-name = "Alex"
+name = "alex"
+
+
 
 def nameFun():
     f_name = "allan"
     print("my name : "+f_name)
     print("global Name: "+name)
+    return f_name;
 
 def newName():
-    f_name = "lukwago"
-    print("my name : "+name)
+    f_name = nameFun();
+    print("my name : "+f_name)
+    print("global Name: "+name)
 
 def modifyGlobal():
-    global name
+    last_name = "lukwago"
+    full_name =last_name + " "+name
+    #global name
+    print(full_name)
+   #n=last_name.capitalize()
+    #print("in modify global: "+n)
     #substring
+
+newName()
+modifyGlobal()
+nameFun()

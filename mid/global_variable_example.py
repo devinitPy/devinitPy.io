@@ -7,10 +7,9 @@
 counter  = 0
 
 def course_data():
-    # the word global infront of counter tells python we are refering to the counter
+    # the word global infront of counter tells python we are refering to the global counter
     # variable defined outside this function
-    # we shall study more about global variables when we study about function scopes
-    globxal counter
+    global counter
     if counter == 0:
         #ask for user name course etc if counter is 0
         name=raw_input("Name: ")
@@ -19,40 +18,42 @@ def course_data():
         counter=counter+1
     else:
         print("You already gave us your details Just get us Your grade: ")
+
     grade=raw_input("Course Grade: ")
     return grade
 
 #function that gets the computed grade (logic)
+#its uses the grade returned by course data
 def computed_grade(user_grade):
     # definining grade value variable as an intially empty variable
     grade_value = None
      #The index of the element corresponds to its value
-    grade_list = ["A","B","C","D","E"]
+    grade_list = ["F","E","D","C","B","A"]
     index = 0
     for g in grade_list:
-        index=index+1
         if user_grade == g :
             grade_value = index
+        index=index+1
     # user entered invalid grade that we dont have in our list
     if grade_value == None:
         print("entered wrong grade, Please re-enter your grades one more Time: ")
-        exam()
+        main()
     else:
-          print ("Your grade value is : "+str(grade_value))
+          print ("Your grade value is : {0}" .format(grade_value))
           return grade_value
 
 def determining_performance(grade):
-    if grade >= 4:
-        print("good performance")
-    elif  grade >=2 and grade < 4:
-        print("average score")
-    else:
-        print("poor performance")
+    grading =["good","bad","excellent","amazing"]
+    index = 0
+    for g in grading:
+        if index == grade:
+             print(g+ "  performance")
+        index=index + 1
 
 #putting all our function in one function so that we make only one function call to run our progra
-def exam():
+def main():
     raw_grade = course_data()
     grade_value=computed_grade(raw_grade)
     determining_performance(grade_value)
 #run our program
-exam()
+main()
