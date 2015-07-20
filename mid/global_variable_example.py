@@ -29,11 +29,11 @@ def computed_grade(user_grade):
     grade_value = None
      #The index of the element corresponds to its value
     grade_list = ["F","E","D","C","B","A"]
-    index = 0
+
     for g in grade_list:
+        index = grade_list.index(g)
         if user_grade == g :
             grade_value = index
-        index=index+1
     # user entered invalid grade that we dont have in our list
     if grade_value == None:
         print("entered wrong grade, Please re-enter your grades one more Time: ")
@@ -44,11 +44,12 @@ def computed_grade(user_grade):
 
 def determining_performance(grade):
     grading =["good","bad","excellent","amazing"]
-    index = 0
+
     for g in grading:
+        index = grading.index(g)
         if index == grade:
              print(g+ "  performance")
-        index=index + 1
+
 
 #putting all our function in one function so that we make only one function call to run our progra
 def main():
