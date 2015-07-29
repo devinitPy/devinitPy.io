@@ -1,0 +1,3 @@
+keith, english 67, maths 56, science 34
+Sophie, english 82, maths 78, science 92
+Nelson, english 55, maths 29, science 73

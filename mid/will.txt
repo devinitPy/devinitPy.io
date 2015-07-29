@@ -1,0 +1,8 @@
+Student's name  Malcom X
+Course  Community Psychology
+Course unit,Course Grade,Score,Total score
+Sociology,B ,4 ,5
+Research,O ,1,5
+Development,D ,2 ,5
+Total score,7,15
+Average score,2.33333333

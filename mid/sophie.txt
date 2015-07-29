@@ -1,0 +1,4 @@
+Richard's Test Scores
+Econometrics, 60
+Microeconomics, 45
+Macroeconomics, 30
