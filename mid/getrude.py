@@ -1,5 +1,6 @@
-''' script that reads students marks from a file
-    computes their grades and gets total and averge score
+'''
+    script that reads students marks from a file
+    computes their grades and gets total and average score
     remove the pass key word after writing your code for each function
 '''
 #"Welcome to the exam score  for your Maths,Science and English subjects"
@@ -44,9 +45,6 @@ def grade(marks):
     return gra
     # returns list of computed grade
 
-
-
-
 def main():
     data=[]
     subject=[]
@@ -54,7 +52,7 @@ def main():
     g=[]
     data = open_file(file_name)
     for y in data:
-        x=y.split(" ")
+        x = y.split(" ")
         subject=subject+[x[0]]
         mar=mar+[x[1]]
 
