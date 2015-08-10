@@ -6,8 +6,11 @@ Assement Test 1
 '''
 
 data = [{"name":"nelson","marks":70},
-            {"name":"richard","marks":60},
-            {"name":"sophie","marks": 80}]
+        {"name":"getrude","marks":85},
+        {"name":"hana","marks":65},
+        {"name":"emma","marks":55},
+        {"name":"richard","marks":60},
+        {"name":"sophie","marks": 90}]
 
 #Qn1 . function that returns students average score
 
@@ -18,5 +21,5 @@ data = [{"name":"nelson","marks":70},
 
 #Q4 write a function that adds to each student dictionary / object a grade attribute i.e data[0]={"name":"allan","marks": 70 , "grade": "B"}
 
-#Bonus Question 5: sort the data list by student marks and return student with highest score
+#Bonus Question 5: sort the data list by student marks and return student with highest score and lowest score
 #hint https://wiki.python.org/moin/HowTo/Sorting
