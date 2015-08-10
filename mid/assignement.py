@@ -14,7 +14,7 @@ data = [{"name":"nelson","marks":70},
 
 #Qn1 . function that returns students average score
 
-# Qn 2. function that returns a list of all the student names sorted in ascendeing order
+# Qn 2. function that returns a list of all the student names sorted in ascending order
 
 #Qn3 . write a function that returns a students grade
 #i.e grade = grading_function(data[0])
