@@ -16,7 +16,7 @@ data = [{"name":"nelson","marks":70},
 #Qn3 . write a function that returns a students grade given the student object as an argument
 #i.e grade = grading_function(data[0])
 
-#Q4 write a function that adds to each student dictionary / object a grade attribute i.e data[0]={"name":"allan","marks": 70 , "grade": "A"}
+#Q4 write a function that adds to each student dictionary / object a grade attribute i.e data[0]={"name":"allan","marks": 70 , "grade": "B"}
 
 #Bonus Question 5: sort the data list by student marks and return student with highest score
 #hint https://wiki.python.org/moin/HowTo/Sorting
