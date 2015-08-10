@@ -1,6 +1,6 @@
 '''
 Assement Test 1
-    Each qn carries  8 marks, bonus qn carries 10marks, Passmark is 50%
+    Each qn carries  10 marks, bonus qn carries 15 marks, Passmark is 50%
     Given a list containing dictionaries of students
     write  functions that  interact with the data as stated in the comments
 '''
