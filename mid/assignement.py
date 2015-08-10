@@ -16,7 +16,7 @@ data = [{"name":"nelson","marks":70},
 
 # Qn 2. function that returns a list of all the student names sorted in ascendeing order
 
-#Qn3 . write a function that returns a students grade given the student object as an argument
+#Qn3 . write a function that returns a students grade
 #i.e grade = grading_function(data[0])
 
 #Q4 write a function that adds to each student dictionary / object a grade attribute i.e data[0]={"name":"allan","marks": 70 , "grade": "B"}
