@@ -21,5 +21,5 @@ data = [{"name":"nelson","marks":70},
 
 #Q4 write a function that adds to each student dictionary / object a grade attribute i.e data[0]={"name":"allan","marks": 70 , "grade": "B"}
 
-#Bonus Question 5: sort the data list by student marks and return student with highest score and lowest score
+#Bonus Question 5: sort the data list by student marks and return student with highest score
 #hint https://wiki.python.org/moin/HowTo/Sorting
