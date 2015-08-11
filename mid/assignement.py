@@ -2,7 +2,7 @@
 Assement Test 1
     Each qn carries  10 marks, bonus qn carries 20 marks, Passmark is 70%
     Given a list containing dictionaries of students
-    write  functions that  interact with the data as stated in the comments
+    write  functions that interacts with the data as stated in the comments
 '''
 
 data = [{"name":"nelson","marks":70},
@@ -19,7 +19,7 @@ data = [{"name":"nelson","marks":70},
 #Qn3 . write a function that returns a students grade
 #i.e grade = grading_function(data[0])
 
-#Q4 write a function that adds to each student dictionary / object a grade attribute i.e data[0]={"name":"allan","marks": 70 , "grade": "B"}
+#Q4 write a function that adds to each student dictionary/object a grade attribute i.e data[0]={"name":"allan","marks": 70 , "grade": "B"}
 
 #Bonus Question 5: sort the data list by student marks and return student with highest score
 #hint https://wiki.python.org/moin/HowTo/Sorting
