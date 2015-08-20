@@ -16,25 +16,26 @@ data = [{"name":"nelson","marks":70},
 # dictionary_var = {"name":"nelson","marks":70}
 # mark = dictionary_var.get("marks",0)
 # mark = dictionary_var["marks"]
-def student_scores(data_in):
-    score_list = []
+def student_data(data_in,attr):
+    value_list = []
     for obj in data_in:
-        mark = obj["marks"]
-        score_list.append(mark)
-    return score_list
+        value_list.append(obj[attr])
+    return value_list
 
-scores = student_scores(data)
-print (scores)
 
 def summation(score_list):
     total = sum(score_list)
     average = total/len(score_list)
     print average
 
+scores =student_data(data,"marks")
+summation(scores)
+
     
 
 # Qn 2. function that returns a list of all the student names sorted in ascending order
-
+names = students_data(data,"names")
+sorted_names = names.sort()
 #Qn3 . write a function that returns a students grade
 #i.e grade = grading_function(data[0])
 
