@@ -13,6 +13,25 @@ data = [{"name":"nelson","marks":70},
         {"name":"sophie","marks": 90}]
 
 #Qn1 . function that returns students average score
+# dictionary_var = {"name":"nelson","marks":70}
+# mark = dictionary_var.get("marks",0)
+# mark = dictionary_var["marks"]
+def student_scores(data_in):
+    score_list = []
+    for obj in data_in:
+        mark = obj["marks"]
+        score_list.append(mark)
+    return score_list
+
+scores = student_scores(data)
+print (scores)
+
+def summation(score_list):
+    total = sum(score_list)
+    average = total/len(score_list)
+    print average
+
+    
 
 # Qn 2. function that returns a list of all the student names sorted in ascending order
 
