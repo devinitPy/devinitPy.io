@@ -1,8 +1,8 @@
 '''
 Assement Test 1
-    Each qn carries  10 marks, bonus qn carries 20 marks, Passmark is 70%
+    Each qn carries  10 marks, bonus qn carries 20 marks, Passmark is 50%
     Given a list containing dictionaries of students
-    write  functions that  interact with the data as stated in the comments
+    write  functions that interacts with the data as stated in the comments
 '''
 from operator import itemgetter, attrgetter
 
@@ -15,32 +15,32 @@ data = [{"name":"nelson","marks":70},
         {"name":"sophie","marks": 90}]
 
 #Qn1 . function that returns students average score
-#helper function
 
-
-def students_data(data_in,attribute):
-    data_list = []
+# dictionary_var = {"name":"nelson","marks":70}
+# mark = dictionary_var.get("marks",0)
+# mark = dictionary_var["marks"]
+def student_data(data_in,attr):
+    value_list = []
     for obj in data_in:
-        data_list.append(obj[attribute])
-    return data_list
+        value_list.append(obj[attr])
+    return value_list
 
-def average_score(scores_in):
-    total = 0
-    for value in scores_in:
-        total += value
-    average = total/(len(scores_in))
+def summation(score_list):
+    total = sum(score_list)
+    average = total/len(score_list)
     print average
 
-average_score(students_data(data,"marks"))
+scores =student_data(data,"marks")
+summation(scores)
+
+
 
 # Qn 2. function that returns a list of all the student names sorted in ascending order
-names  = students_data(data,"name")
-names.sort(key=str.lower)
-
-print names
-
+names = student_data(data,"name")
+sorted_names = names.sort()
 #Qn3 . write a function that returns a students grade
 #i.e grade = grading_function(data[0])
+
 
 def marks_grade(score):
     if score >= 80:
@@ -67,6 +67,7 @@ student_grade=grading_function(data[0])
 print student_grade
 
 #Q4 write a function that adds to each student dictionary / object a grade attribute i.e data[0]={"name":"allan","marks": 70 , "grade": "B"}
+
 
 def grade_attribute(data_in):
     for obj in data_in:
