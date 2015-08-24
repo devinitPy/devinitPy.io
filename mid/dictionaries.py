@@ -25,8 +25,8 @@ for value in my_dictionary.values() :
 # if "age" in my_dictionary:
 #     print my_dictionary["age"]
 # #Get method
-# my_age=my_dictionary.get("age", 0)
-# my_height=my_dictionary.get("height", 1)
+my_age=my_dictionary.get("age", 0)
+my_height=my_dictionary.get("height", 1)
 
 # #adding new key value
 # if "height" not in my_dictionary:
