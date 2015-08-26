@@ -22,7 +22,7 @@ def pdfparser(path):
         interpreter.process_page(page)
         #data variable contain all the raw pdf data, Feel free to print it out
         data =  data_buffer.getvalue()
-    print data
+    #print data
     return data
 
 
@@ -30,7 +30,9 @@ def manuplate_pdf_data(data):
     #split content by new line
     processed_data = data.splitlines()
     print "-----------------------------------------"
-    print  processed_data[2]
+    #print  processed_data[0]
+    for index in range(0,4):
+        print processed_data[index]
 
 pdfdata = pdfparser("cv.pdf")
 manuplate_pdf_data(pdfdata)
