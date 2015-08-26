@@ -11,6 +11,7 @@ import csv
 from operator import itemgetter
 
 parser = OptionParser()
+
 parser.add_option("-i", "--input", dest="input", default="./tmp/Draft Detailed Estimates FY13-14 10.7.13.pdf",
                 help="Input pdf name", metavar="FILE")
 parser.add_option("-o", "--output", dest="output", default="./tmp/",

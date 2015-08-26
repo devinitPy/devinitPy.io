@@ -13,7 +13,7 @@ def pdfparser(path):
     codec = 'utf-8'
     #makes it possible to reflect pdf layout in returned data
     laparams = LAParams()
-    #variable containing configurations for pdf converting
+    #variable containing configurations for pdf convertion
     configurations = TextConverter(pdf_resource_manager, data_buffer, codec=codec,laparams=laparams)
     # Create a PDF interpreter object.
     interpreter = PDFPageInterpreter(pdf_resource_manager, configurations)
@@ -22,15 +22,15 @@ def pdfparser(path):
         interpreter.process_page(page)
         #data variable contain all the raw pdf data, Feel free to print it out
         data =  data_buffer.getvalue()
-
+    print data
     return data
-
 
 
 def manuplate_pdf_data(data):
     #split content by new line
     processed_data = data.splitlines()
-    print  processed_data[0]
+    print "-----------------------------------------"
+    print  processed_data[2]
 
 pdfdata = pdfparser("cv.pdf")
 manuplate_pdf_data(pdfdata)
